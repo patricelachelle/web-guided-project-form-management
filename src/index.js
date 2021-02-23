@@ -29,7 +29,7 @@ function SimpleForm() {
   //   setFormValues({...formValues, petType: value })
   // }
   const change = evt => {
-    debugger
+    // debugger
     const { name, value } = evt.target
     setFormValues({...formValues, [name]: value })
   }
@@ -65,8 +65,8 @@ function SimpleForm() {
 
 render(
   <>
-    <SimpleForm />
-    {/* <App /> */}
+    {/* <SimpleForm /> */}
+    <App />
   </>
   , document.querySelector('#root')
 )
