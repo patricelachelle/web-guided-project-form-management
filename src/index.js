@@ -27,7 +27,8 @@ function SimpleForm() {
   }
 
   const submit = evt => {
-
+    evt.preventDefault()
+    debugger
   }
 
   return (
