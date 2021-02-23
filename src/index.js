@@ -24,6 +24,10 @@ function SimpleForm() {
 
   }
 
+  const submit = evt => {
+    
+  }
+
   return (
     <div className="container">
       <h1>Simple Form</h1>
@@ -34,7 +38,7 @@ function SimpleForm() {
         </div>
         )})
       }
-      <form>
+      <form onSubmit={submit}>
         <input name='petName' type='text' onChange={change} value={formValues.petName} />
         <input name='petType' type='text' onChange={change} value={formValues.petType} />
         <button>submit</button>
