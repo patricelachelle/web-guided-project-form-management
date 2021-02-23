@@ -30,7 +30,8 @@ export default function FriendForm(props) {
               At each keystroke, a change handler fires to change app state. */}
               <input 
                 name='username' 
-                type='text' value={values.username} 
+                type='text' 
+                value={values.username} 
                 onChange={onChange} 
                 placeholder='type a username...'
                 maxLength='30'
@@ -39,6 +40,13 @@ export default function FriendForm(props) {
 
         <label>Email
           {/* 🔥 STEP 4 - Make an input of type `email` or `text` for email. */}
+          <input
+            name='email' 
+            type='email' 
+            value={values.email} 
+            onChange={onChange} 
+            placeholder='name@email.com'
+          />
         </label>
 
         {/* ////////// DROPDOWN ////////// */}
