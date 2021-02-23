@@ -21,7 +21,6 @@ export default function App() {
   const updateForm = (inputName, inputValue) => {
     // 🔥 STEP 8 - IMPLEMENT a "form state updater" which will be used inside the inputs' `onChange` handler
     //  It takes in the name of an input and its value, and updates `formValues`
-    console.log(inputValue)
     setFormValues({
       ...formValues,
       [inputName]: inputValue
@@ -36,11 +35,18 @@ export default function App() {
       email: formValues.email.trim(),
       role: formValues.role.trim(),
     }
+    //  b) prevent further action if either username or email or role is empty string after trimming
     if (!newFriend.username || !newFriend.email || !newFriend.role) {
       return;
     }
-    //  b) prevent further action if either username or email or role is empty string after trimming
     //  c) POST new friend to backend, and on success update the list of friends in state with the new friend from API
+    axios.post('fakeapi.com', newFriend)
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err => {
+        console.log(err)
+      })
     //  d) also on success clear the form
   }
 
