@@ -42,7 +42,7 @@ export default function App() {
     //  c) POST new friend to backend, and on success update the list of friends in state with the new friend from API
     axios.post('fakeapi.com', newFriend)
       .then(res => {
-        console.log(res)
+       setFriends([...friends, res.data])
       })
       .catch(err => {
         console.log(err)
