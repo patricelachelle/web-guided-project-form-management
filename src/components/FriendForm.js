@@ -28,6 +28,13 @@ export default function FriendForm(props) {
               Controlled inputs need `value` and `onChange` props.
               Inputs render what they're told - their current value comes from app state.
               At each keystroke, a change handler fires to change app state. */}
+              <input 
+                name='username' 
+                type='text' value={values.username} 
+                onChange={onChange} 
+                placeholder='type a username...'
+                maxLength='30'
+              />
         </label>
 
         <label>Email
