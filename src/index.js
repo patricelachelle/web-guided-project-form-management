@@ -20,6 +20,10 @@ function SimpleForm() {
   const [pets, setPets] = useState(petsList)
   const [formValues, setFormValues] = useState(initialFormValue)
 
+  const change = evt => {
+
+  }
+
   return (
     <div className="container">
       <h1>Simple Form</h1>
@@ -31,7 +35,7 @@ function SimpleForm() {
         )})
       }
       <form>
-        <input type='text' />
+        <input name='petName' type='text' onChange={change} value={formValues.petName} />
       </form>
     </div>
   )
