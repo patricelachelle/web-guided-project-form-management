@@ -21,11 +21,12 @@ function SimpleForm() {
   const [formValues, setFormValues] = useState(initialFormValue)
 
   const change = evt => {
+    debugger
 
   }
 
   const submit = evt => {
-    
+
   }
 
   return (
