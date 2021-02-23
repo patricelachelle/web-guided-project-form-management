@@ -48,6 +48,7 @@ export default function App() {
         console.log(err)
       })
     //  d) also on success clear the form
+    setFormValues(initialFormValues)
   }
 
   useEffect(() => {
