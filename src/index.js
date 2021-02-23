@@ -32,7 +32,8 @@ function SimpleForm() {
       petName: formValues.petName.trim(),
       petType: formValues.petType.trim(),
     }
-    debugger
+    setPets(pets.concat(newPet))
+    setFormValues(initialFormValue)
   }
 
   return (
