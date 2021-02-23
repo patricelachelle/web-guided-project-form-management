@@ -30,6 +30,9 @@ function SimpleForm() {
         </div>
         )})
       }
+      <form>
+        <input type='text' />
+      </form>
     </div>
   )
 }
