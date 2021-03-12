@@ -9,10 +9,22 @@
   <link rel="stylesheet" href="styles.less">
   <link rel="icon" href="favicon.ico" />
   <script src="index.js" defer></script>
+  <script>
+    const submitHandler = event => {
+      console.log('submitted!')
+      console.log(document.forms["htmlForm"]["name"].value)
+      event.preventDefault();
+    }
+  </script>
   <title>Friends</title>
 </head>
 
 <body>
+  <form name="htmlForm" onsubmit="submitHandler(event)">
+    <h3>HTML Form</h3>
+    <input name="name" type="text" placeholder="name"/>
+    <input type="submit" value="Submit"/>
+  </form>
   <div id="root"></div>
 </body>
 
