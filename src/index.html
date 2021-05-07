@@ -14,6 +14,15 @@
 
 <body>
   <div id="root"></div>
+
+  <h3>Vanilla Form</h3>
+  <input type="text" id="super-cool-input" />
+  <script>
+    const input = document.querySelector('#super-cool-input')
+    input.addEventListener('input', (event) => {
+      console.log(event.target.value)
+    })
+  </script>
 </body>
 
 </html>
