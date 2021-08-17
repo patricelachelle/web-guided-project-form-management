@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import Friend from './Friend'
-import FriendForm from './FriendForm'
-import axios from '../axios'
+import React, { useState, useEffect } from 'react';
+import Friend from './Friend';
+import FriendForm from './FriendForm';
+import axios from '../axios';
 
 // 👉 the shape of the state that drives the form
 const initialFormValues = {

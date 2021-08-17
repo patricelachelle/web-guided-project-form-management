@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function FriendForm(props) {
   // THESE ARE THE **EXACT PROPS** FriendForm EXPECTS!!!
